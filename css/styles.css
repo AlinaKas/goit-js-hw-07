@@ -1,0 +1,33 @@
+/* ========================== Task 3 ===================================*/
+#gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* ========================== Task 6 ===================================*/
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+/* ===================================================================== */
