@@ -28,8 +28,8 @@ const images = [
 
 
 const addImages = document.querySelector('#gallery');
-images.forEach((image) => {
-    addImages.insertAdjacentHTML('beforeend', `<li class='item'><img class='img' src='${image.url}' alt='${image.alt}' width ='600'></li>`)
-}
-);
+const galleryRef = document.querySelector('#gallery');
+
+galleryRef.insertAdjacentHTML('beforeend', images.map(img =>`<li class='item'><img class='img' src='${img.url}' alt='${img.alt}' width ='600'></li>`).join(''));
+
 
